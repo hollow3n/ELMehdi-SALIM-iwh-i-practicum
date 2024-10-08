@@ -1,0 +1,20 @@
+doctype html
+html 
+    head
+        title #{title}
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 #{title}
+        h2 film
+        a( href="/update-cobj") Add to this table
+        table 
+            tr
+                th prop a
+                th prop b
+                th prop c
+            each contact in data 
+                tr
+                    td= contact.properties.propa
+                    td= contact.properties.propb
+                    td= contact.properties.propc

@@ -1,0 +1,17 @@
+doctype html 
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Add A Film
+        form(action="/update-cobj" method="post")
+            label(for="propa") propa:
+            input(type="number" name="propa")
+            label(for="propb") propb:
+            input(type="number" name="propb")
+            label(for="propc") propc:
+            input(type="number" name="propc")
+            input(type="submit" value="Submit")
+        a( href="/") Return to the homepage
